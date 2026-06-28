@@ -33,7 +33,7 @@ Users should be able to:
 
 #### Mobile
 
-![](./screenshots/mobile.png)
+<img src="./screenshots/mobile.png.jpg" alt="" width="200"/>
 
 ### Links
 
