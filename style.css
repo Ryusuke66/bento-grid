@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(256, 67%, 59%);
+    --primary-light: hsl(254, 88%, 90%);
+    --secondary: hsl(39, 100%, 71%);
+    --secondary-light: hsl(31, 66%, 93%);
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    padding: 32px 16px;
+    background-color: hsl(0, 0%, 96%);
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 16px;
+    width: 345px;
+    overflow: hidden;
+}
+
+.first {
+    background-color: var(--primary);
+    color: white;
+    padding: 38px;
+    text-align: center;
+    height: 290px;
+}
+
+.header {
+    font-weight: 500;
+    font-size: 2.7em;
+    line-height: 42px;
+}
+
+.stars {
+    margin-top: 25px;
+}
+
+.stars img {
+    width: 190px;
+}
+
+.header span {
+    color: var(--secondary);
+}
+
+.second {
+    background: white;
+    padding-right: 12px;
+    height: 165px;
+}
+
+.second p {
+    margin-top: 10px;
+
+}
+
+.third {
+    background-color: var(--secondary);
+    padding-bottom: 0px;
+    height: 218px;
+}
+
+.third p {
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+.consistent img {
+    width: 205px
+}
+
+.forth {
+    height: 470px;
+    background-color: var(--primary-light);
+    text-align: center;
+}
+
+.forth p {
+    padding: 15px 10px;
+}
+
+.forth .schedule {
+    margin-top: 10px;
+}
+
+.forth .optimize {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 14px;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+
+.fifth {
+    background-color: var(--primary);
+    height: 373px;
+    color: white;
+    text-align: center;
+}
+
+.fifth .grow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 45px;
+}
+
+.fifth img {
+    width: 225px
+}
+
+.fifth p {
+    font-size: 1.9em;
+    line-height: 27px;
+    padding: 0 50px;
+}
+
+.sixth {
+    height: 217px;
+    background: white;
+    padding-left: 23px;
+}
+
+.sixth .num {
+    font-size: 2.7em;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.sixth .faster-growth {
+    margin-top: 20px;
+}
+
+.sixth img {
+    width: 180px;
+}
+
+.seventh {
+    height: 235px;
+    background-color: var(--secondary-light);
+    padding: 35px 20px 35px 30px;
+}
+
+.seventh p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.seventh i {
+    color: var(--primary);
+}
+
+.seventh img {
+    width: 190px
+}
+
+.eighth {
+    background-color: var(--secondary);
+    padding: 24px;
+}
+
+.eighth p {
+    font-size: 1.8em;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.eighth img {
+    width: 220px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        padding-left: 11%;
+        padding-right: 11%;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 2.4em;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 55px) repeat(8, 62px);
+        grid-template-areas: "A B B C"
+            "A B B C"
+            "A B B C"
+            "A B B C"
+            "A D E C"
+            "F D E C"
+            "F D E C"
+            "F G H H"
+            "F G H H"
+            "F G H H";
+    }
+
+    .seventh {
+        grid-area: A;
+        padding-top: 80px;
+    } 
+
+    .seventh p {
+        font-size: 2.4em;
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+
+    .first {
+        grid-area: B;
+        padding-top: 55px;
+    }
+
+    .first .header {
+        font-size: 3.9em;
+        line-height: 42px;
+    }
+
+    .forth {
+        grid-area: C;
+        text-align: left;
+        padding: 50px 35px;
+    }
+
+    .forth p {
+        font-size: 2em;
+        line-height: 25px;
+        padding: 0;
+    }
+
+    .forth .schedule {
+        margin-top: 30px;
+        width: 370px;
+        margin-right: -180px;
+    }
+
+    .forth .optimize {
+        font-size: 1.3em;
+    }
+
+    .second {
+        grid-area: D;
+        padding: 25px;
+    }
+
+    .second .platforms {
+        width: 150%;
+    }
+
+    .second p {
+        font-size: 2em;
+        margin-top: 15px;
+        line-height: 28px;
+    }
+    
+    .third {
+        grid-area: E;
+        padding: 25px;
+    }
+
+    .third p {
+        font-size: 2em;
+        line-height: 28px;
+    }
+
+    .eighth {
+        grid-area: F;
+    }
+
+    .eighth p {
+        font-size: 2.4em;
+        line-height: 35px;
+        margin-bottom: 55px;
+    }
+    
+    .eighth .write {
+        width: 120%;
+    }
+
+    .sixth { 
+        grid-area: G;
+        width: 100%;
+        padding: 7px 25px;
+    }
+
+    .sixth .num {
+        font-size: 4em;
+    }
+
+    .sixth .faster-growth {
+        margin-top: 40px;
+    }
+
+    .fifth{ 
+        grid-area: H;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+    .fifth .grow {
+        margin: auto;
+        display: block;
+    }
+
+    .fifth .grow img {
+        width: 560px;
+    }
+
+    .fifth p {
+        padding: 0;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 38px;
+        letter-spacing: normal;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    .first .header {
+        line-height: 60px;
+    }
+
+    .forth .optimize {
+        font-size: 1.15em;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
