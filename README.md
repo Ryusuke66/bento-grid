@@ -33,7 +33,7 @@ Users should be able to:
 
 #### Mobile
 
-<img src="./screenshots/mobile.png.jpg" alt="" width="200"/>
+<img src="./screenshots/mobile.png" alt="" width="200"/>
 
 ### Links
 
