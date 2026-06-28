@@ -55,4 +55,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Ryusuke66](https://www.frontendmentor.io/profile/Yassine Ghezal)
+- Frontend Mentor - [Yassine Ghezal](https://www.frontendmentor.io/profile/Ryusuke66)
