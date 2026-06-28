@@ -29,7 +29,7 @@ Users should be able to:
 
 #### Tablet
 
-![](./screenshots/tablet.png)
+<img src="./screenshots/mobile.png" alt="" width="400"/>
 
 #### Mobile
 
